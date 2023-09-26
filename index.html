@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+</head>
+
+<link rel="stylesheet" href="index.css">
+<link rel="icon" href="./images/icons8-js-48.png">
+
+<body>
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <section class="heading">
+                    <p class="title">BudgetTracker</p>
+                    <p class="subtitle">Easiest way to Track your Transations!</p>
+                </section>
+                <section class="transaction-control">
+                    <div class="actions">
+                        <h3>Add Transactions</h3>
+                        <form class="add">
+                            <input type="text" name="source" placeholder="Source" autocomplete="off">
+                            <input type="number" name="amount" placeholder="Amount" autocomplete="off">
+                            <input type="submit" value="Add Transactions">
+                        </form>
+                    </div>
+                    <div class="stats">
+                        <h3>Statistics</h3>
+                        <p class="balance">
+                            Balance: $<Span id="balance"></Span>
+                        </p>
+                        <p class="income">
+                            Income: $<Span id="income"></Span>
+                        </p>
+                        <p class="expense">
+                            Expense: $<Span id="expense"></Span>
+                        </p>
+                    </div>
+                </section>
+                <section class="transaction-history"> 
+                    <h3>Transaction History</h3>
+                    <div class="records">
+                        <div class="income">
+                            <h3>income</h3>
+                            <ul class="income-list">
+                            </ul>
+                        </div>
+                        <div class="expense">
+                            <h3>expense</h3>
+                            <ul class="expense-list">
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
